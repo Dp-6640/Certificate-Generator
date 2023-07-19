@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verification Result</title>
+</head>
+<body>
+    <h1>Verification Result</h1>
+    {% if certificate %}
+        <p>Certificate Title: {{ certificate.title }}</p>
+        <p>Certificate Content: {{ certificate.content }}</p>
+    {% elif error %}
+        <p>{{ error }}</p>
+    {% endif %}
+</body>
+</html>
